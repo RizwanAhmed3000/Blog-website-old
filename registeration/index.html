@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <!-- -------------------FontAwesome-------------------- -->
+    <script src="https://kit.fontawesome.com/9828c0ee5c.js" crossorigin="anonymous"></script>
+    <!-- ----------------Bootstrap--------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ---------------------CSS---------------------- -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="Maincontainer">
+
+        <!-- Login Form -->
+
+
+        <div class="formContainer mt-5">
+            <div class="form">
+                <p class="fw-bold">Email address</p>
+                <input  type="text" id="email" placeholder="Email address" class="form-control" style="width: 70%;" required>
+                <p class="fw-bold">Password</p>
+                <div class="passDiv d-flex">
+                    <div class="input-group mb-3">
+                        <input  type="password" class="form-control " id="password" placeholder="Password" required>
+
+                    </div>
+                    <!-- <input type="password" id="password" placeholder="Password">
+                        <button class="btn btn-outline-success passwordBtn" onclick="showHide()" type="button" id="button-addon2"><i class="fa-regular fa-eye"></i></button> -->
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="color: #282828;">
+                        Remember me
+                    </label>
+                </div>
+                <button type="button" id="loginBtn" class="btn btn-warning">Log in</button>
+                <p>or</p>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" id="creatBtn"
+                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Creat new account</button>
+
+            </div>
+        </div>
+
+        <!-- Signup Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #fafafa; color: #282828;">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">Sign up here</h1>
+                        <button type="button" class="btn-close" style="fill: #fafafa;" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">First name:</label>
+                                <input type="text" placeholder="First Name" class="form-control" id="first-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-Last-name" class="col-form-label">Last name:</label>
+                                <input type="text" placeholder="Last Name" class="form-control" id="last-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email-address" class="col-form-label">Email address:</label>
+                                <input type="email" placeholder="Email address" class="form-control" id="email-address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">New password:</label>
+                                <div class="input-group mb-3">
+                                    <input type="password" placeholder="New Password" class="form-control"
+                                        id="new-password">
+
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Repeat Password:</label>
+                                <div class="input-group mb-3">
+                                    <input type="password" placeholder="Repeat Password" class="form-control"
+                                        id="repeat-password">
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning" id="creatAcctountBtn">Creat account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- --------------------------MomentJS---------------------- -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+            integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- ----------------------------Bootstrap------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <!-- ------------------------SignUp---------------------------------------------- -->
+        <script src="signUp.js" type="module"></script>
+
+</body>
+
+</html>
